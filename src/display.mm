@@ -74,7 +74,7 @@ CGDisplayModeRef DisplayMode::getDisplayModeRef() const {
 }
 
 std::string DisplayMode::toString() {
-    return stringprintf("%lu x %lu @ %f}", CGDisplayModeGetWidth(_mode), CGDisplayModeGetHeight(_mode), CGDisplayModeGetRefreshRate(_mode));
+    return stringprintf("%lu x %lu @ %f", CGDisplayModeGetWidth(_mode), CGDisplayModeGetHeight(_mode), CGDisplayModeGetRefreshRate(_mode));
 }
 DisplayMode DisplayMode::getCurrentMainDisplayMode() {
     CGDirectDisplayID id = CGMainDisplayID();
